@@ -1,7 +1,7 @@
 import React from "react"
 import Popular from "./Movies/Popular"
 import Navigation from "./Constants/Navigation"
-import { Container, Row } from "react-bootstrap"
+import { Container } from "react-bootstrap"
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
@@ -9,12 +9,7 @@ function App() {
     <div>
       <Navigation />
       <Container>
-
-        <Row>
-
-          <Popular />
-
-        </Row>
+        <Popular />
       </Container>
     </div>
   )
