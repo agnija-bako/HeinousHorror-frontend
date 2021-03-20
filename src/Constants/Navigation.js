@@ -9,18 +9,18 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 function Navigation() {
     return (
-        <Navbar bg="light" expand="lg">
-            <Navbar.Brand href="#home">Heinous Horror</Navbar.Brand>
+        <Navbar expand="lg" style={{ backgroundColor: "black" }}>
+            <Navbar.Brand href="#home" className="text-white">Heinous Horror</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
-                    <Nav.Link href="#home">Home</Nav.Link>
-                    <NavDropdown title="Games" id="basic-nav-dropdown">
+                    <Nav.Link href="#home" className="text-white">Home</Nav.Link>
+                    <NavDropdown title={<span className="text-white my-auto">Games</span>} id="basic-nav-dropdown" >
                         <NavDropdown.Item href="#action/3.1">Top</NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.2">Explore</NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.3">Upcoming</NavDropdown.Item>
                     </NavDropdown>
-                    <NavDropdown title="Movies" id="basic-nav-dropdown">
+                    <NavDropdown title={<span className="text-white my-auto">Movies</span>} id="basic-nav-dropdown">
                         <NavDropdown.Item href="#action/3.1">Top</NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.2">Explore</NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.3">Upcoming</NavDropdown.Item>
