@@ -1,16 +1,27 @@
 import React from "react"
-import { Jumbotron } from "react-bootstrap"
+import { Container, Jumbotron } from "react-bootstrap"
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import 'animate.css';
 
 function Header() {
+    const styles = {
+        color: '#d90128',
+        //backgroundImage: `url('static/images/door.jpg')`,
+        // backgroundSize: '100%',
+        height: '700px',
+        transition: "backgroundSize 1s",
+    }
     //const background = { backgroundSize: 'cover' };
     return (
         <div style={{ width: 'auto' }}>
-            <Jumbotron style={{ backgroundImage: `url('static/images/door.jpg')`, backgroundSize: 'cover', height: '700px' }} fluid>
-                <h2 className="text-white subtitle text-center mt-5 pt-5">Entertainment</h2>
-                <h1 className="title display-1 text-center" style={{ color: "#d90128" }}>Heinous Horror</h1>
+            <Jumbotron fluid className="jumbo">
+                <h2 className=" top-subtitle text-center mt-5 pt-5 px-5 " style={{ color: styles.color }}>Entertainment</h2>
+                <h1 className="title display-1 text-center dead-dude" >Heinous Horror</h1>
                 <h2 className="text-white subtitle text-center text-uppercase">For true horror fans</h2>
+                <Container>
+                    <h3 className="subtitle text-left text-uppercase " style={{ color: "#F2C85B", marginTop: "24rem" }}>Discover horror games, movies, tv-series</h3>
+                </Container>
             </Jumbotron>
         </div>
     );

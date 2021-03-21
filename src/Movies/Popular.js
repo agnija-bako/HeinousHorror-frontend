@@ -8,6 +8,7 @@ import PrevArrow from "./ArrowPrevious"
 import NextArrow from "./ArrowNext"
 import './Movies.css'
 
+
 class Popular extends React.Component {
     constructor() {
         super();
@@ -30,8 +31,8 @@ class Popular extends React.Component {
             dots: true,
             infinite: true,
             speed: 500,
-            slidesToShow: 6,
-            slidesToScroll: 4,
+            slidesToShow: 5,
+            slidesToScroll: 3,
             initialSlide: 0,
             nextArrow: <NextArrow />,
             prevArrow: <PrevArrow />,
@@ -65,7 +66,7 @@ class Popular extends React.Component {
 
         return (
             <div>
-                <h2 className="my-3">Popular movies</h2>
+                <h2 className="my-5 subtitle text-white text-uppercase pt-5" >Popular movies</h2>
 
                 <Slider {...settings}>
                     {this.state.movies.map((movie) => {

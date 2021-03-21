@@ -14,9 +14,9 @@ function Movie(props) {
     }
     return (
 
-        <Card style={{ width: '10rem', border: '0px solid white' }} className="mx-3">
-            <Card.Img variant="top" src={props.poster} style={{ borderRadius: "5%" }} />
-            <Card.Body style={{ marginTop: '-2.7rem' }} className="ml-0 pl-1">
+        <Card style={{ width: '10rem', border: '0px solid black', backgroundColor: "black" }} className="mx-3 text-uppercase">
+            <Card.Img variant="top" src={props.poster} />
+            <Card.Body style={{ marginTop: '-2.7rem', color: "white" }} className="ml-0 pl-1">
                 <a href="/" className={`badge ${badgeColor} py-3 px-2`} style={{ borderRadius: '50%', border: 'white solid 2px', marginLeft: '0' }}>{props.votes * 10} %</a>
                 <Card.Title>{props.titleOriginal}</Card.Title>
                 <Card.Text>{props.date}</Card.Text>

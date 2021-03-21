@@ -1,8 +1,58 @@
 .title{
     font-family: 'Nosifer', cursive;
-    color: "#d90128";
+  color:white!important;
+  transition:color 0.2s ease-in-out, text-shadow 3s ease-in-out; 
+	-webkit-transition:all 3s ease-in-out;
+	-moz-transition:all 3s ease-in-out;
+  -o-transition:all 15s ease-in-out;
+  text-shadow: 0px 0px 30px black;
 }
+
+body{
+    background-color: black;
+}
+
+
+h1.dead-dude:hover {
+    color: white!important;
+    text-shadow: 0px 1px #d90128,0px 2px #d90128, 0px 3px #d90128, 0px 4px #d90128, 0px 5px #d90128, 0px 6px #d90128, 0px 7px #d90128, 0px 8px #d90128, 0px 9px #d90128, 0px 10px #d90128, 0px 11px #d90128, 0px 12px #d90128, 0px 13px #d90128, 0px 14px #d90128, 0px 15px #d90128, 0px 16px #d90128, 0px 17px #d90128, 0px 18px #d90128, 0px 19px #d90128, 0px 20px #d90128, 0px 21px #d90128, 0px 22px #d90128, 0px 23px #d90128, 0px 24px #d90128, 0px 25px #d90128, 0px 26px #d90128, 0px 27px #d90128, 0px 28px #d90128, 0px 29px #d90128, 0px 30px #d90128, 0px 31px #d90128, 0px 32px #d90128, 0px 33px #d90128, 0px 34px #d90128, 0px 35px #d90128, 0px 36px #d90128, 0px 37px #d90128, 0px 38px #d90128, 0px 39px #d90128, 0px 40px #d90128, 0px 41px #d90128, 0px 42px #d90128, 0px 43px #d90128, 0px 44px #d90128, 0px 45px #d90128, 0px 46px #d90128, 0px 47px #d90128, 0px 48px #d90128, 0px 49px #d90128, 0px 50px #d90128, 0px 51px #d90128,0px 52px #d90128, 0px 53px #d90128, 0px 54px #d90128, 0px 55px #d90128, 0px 56px #d90128, 0px 57px #d90128, 0px 58px #d90128, 0px 59px #d90128, 0px 60px #d90128, 0px 61px #d90128, 0px 62px #d90128, 0px 63px #d90128, 0px 64px #d90128, 0px 65px #d90128, 0px 66px #d90128, 0px 67px #d90128, 0px 68px #d90128, 0px 69px #d90128, 0px 70px #d90128, 0px 71px #d90128, 0px 72px #d90128, 0px 73px #d90128, 0px 74px #d90128, 0px 75px #d90128, 0px 76px #d90128, 0px 77px #d90128, 0px 78px #d90128, 0px 79px #d90128, 0px 80px #d90128, 0px 81px #d90128, 0px 82px #d90128, 0px 83px #d90128, 0px 84px #d90128, 0px 85px #d90128, 0px 86px #d90128, 0px 87px #d90128, 0px 88px #d90128, 0px 89px #d90128, 0px 90px #d90128, 0px 91px #d90128, 0px 92px #d90128, 0px 93px #d90128, 0px 94px #d90128, 0px 95px #d90128, 0px 96px #d90128, 0px 97px #d90128, 0px 98px #d90128, 0px 99px #d90128, 0px 100px #d90128, 0px 101px #d90128,0px 102px #d90128, 0px 103px #d90128, 0px 104px #d90128, 0px 105px #d90128, 0px 106px #d90128, 0px 107px #d90128, 0px 108px #d90128, 0px 109px #d90128, 0px 110px #d90128, 0px 111px #d90128, 0px 112px #d90128, 0px 113px #d90128, 0px 114px #d90128, 0px 115px #d90128, 0px 116px #d90128, 0px 117px #d90128, 0px 118px #d90128, 0px 119px #d90128, 0px 120px #d90128, 0px 121px #d90128, 0px 122px #d90128, 0px 123px #d90128, 0px 124px #d90128, 0px 125px #d90128, 0px 126px #d90128, 0px 127px #d90128, 0px 128px #d90128, 0px 129px #d90128, 0px 130px #d90128, 0px 131px #d90128, 0px 132px #d90128, 0px 133px #d90128, 0px 134px #d90128, 0px 135px #d90128, 0px 36px #d90128, 0px 37px #d90128, 0px 38px #d90128, 0px 39px #d90128, 0px 40px #d90128, 0px 41px #d90128, 0px 142px #d90128, 0px 143px #d90128;
+  }
+
 
 .subtitle{
     font-family: 'Open Sans', sans-serif;
+}
+
+.top-subitle{
+    font-family: 'Open Sans', sans-serif;
+    color:  #d90128!important;
+    text-decoration: underline;
+
+
+}
+.logo{
+    font-family: 'Nosifer', cursive;
+    color:  #d90128!important;
+
+}
+
+.jumbo{
+    background-image: url("assets/images/door.jpg");
+    animation: jumbo-animation 2.5s; 
+    background-size: 105%;
+    background-position: left center;
+    height: 800px
+
+}
+
+@keyframes jumbo-animation {
+    0% {
+        background-size: 100%;
+        background-position: left bottom;
+    }
+    100% {
+        background-size: 105%;
+        background-position: left center;
+    }
+
 }
