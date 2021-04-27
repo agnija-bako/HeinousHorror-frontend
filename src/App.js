@@ -1,5 +1,5 @@
 import React from "react"
-import Popular from "./Movies/Popular"
+import Movies from "./Movies/Movies"
 import Navigation from "./Constants/Navigation"
 import { Container } from "react-bootstrap"
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -11,7 +11,7 @@ function App() {
       <Navigation />
       <Header />
       <Container>
-        <Popular />
+        <Movies />
       </Container>
     </div>
   )

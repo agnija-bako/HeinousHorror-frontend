@@ -37,7 +37,7 @@ h1.dead-dude:hover {
 }
 
 .jumbo{
-    background-image: url("assets/images/door.jpg");
+    background-color: black;
     animation: jumbo-animation 2.5s; 
     background-size: 105%;
     background-position: left center;
@@ -56,3 +56,19 @@ h1.dead-dude:hover {
     }
 
 }
+
+.container{
+    background-color: black;
+}
+
+
+    /* the slides */
+    /* the slides */
+    .slick-slide {
+        margin-left:5px;
+      }
+    
+      /* the parent */
+      .slick-list {
+        margin-left:-5px;
+      }

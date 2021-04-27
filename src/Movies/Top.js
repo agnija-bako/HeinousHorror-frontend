@@ -9,7 +9,7 @@ import NextArrow from "./ArrowNext"
 import './Movies.css'
 
 
-class Popular extends React.Component {
+class Top extends React.Component {
     constructor() {
         super();
         this.state = {
@@ -18,7 +18,7 @@ class Popular extends React.Component {
     }
 
     async componentDidMount() {
-        await fetch("https://localhost:44390/api/movies/popular")
+        await fetch("https://localhost:44390/api/movies/top")
             .then(response => response.json())
             .then(data => {
                 this.setState({ movies: data.results })
@@ -67,7 +67,7 @@ class Popular extends React.Component {
 
         return (
             <div>
-                <h2 className=" subtitle  text-white " >Popular movies</h2>
+                <h2 className="subtitle text-white" >Top rated movies</h2>
 
                 <Slider {...settings}>
                     {this.state.movies.map((movie) => {
@@ -83,4 +83,4 @@ class Popular extends React.Component {
     }
 }
 
-export default Popular
+export default Top

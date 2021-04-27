@@ -14,15 +14,12 @@ function Header() {
     }
     //const background = { backgroundSize: 'cover' };
     return (
-        <div style={{ width: 'auto' }}>
-            <Jumbotron fluid className="jumbo">
-                <h2 className=" top-subtitle text-center mt-5 pt-5 px-5 " style={{ color: styles.color }}>Entertainment</h2>
-                <h1 className="title display-1 text-center dead-dude" >Heinous Horror</h1>
+        <div style={{ width: 'auto', height:'70rem'}} className="mb-5">
+            <div fluid className="jumbo">
+                <h2 className=" top-subtitle text-center  pt-5 px-5 " style={{ color: styles.color }}>Entertainment</h2>
+                <h1 className="title display-1 text-center dead-dude mx-2" style={{fontSize: "12vw"}}>Heinous Horror</h1>
                 <h2 className="text-white subtitle text-center text-uppercase">For true horror fans</h2>
-                <Container>
-                    <h3 className="subtitle text-left text-uppercase " style={{ color: "#F2C85B", marginTop: "24rem" }}>Discover horror games, movies, tv-series</h3>
-                </Container>
-            </Jumbotron>
+            </div>
         </div>
     );
 
