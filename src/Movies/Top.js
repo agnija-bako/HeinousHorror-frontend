@@ -31,7 +31,7 @@ class Top extends React.Component {
             dots: true,
             infinite: true,
             speed: 500,
-            slidesToShow: 5,
+            slidesToShow: 8,
             slidesToScroll: 3,
             initialSlide: 0,
             nextArrow: <NextArrow />,
@@ -67,7 +67,7 @@ class Top extends React.Component {
 
         return (
             <div>
-                <h2 className="subtitle text-white" >Top rated movies</h2>
+                <h2 className="subtitle text-white mx-5" >Top rated movies</h2>
 
                 <Slider {...settings}>
                     {this.state.movies.map((movie) => {

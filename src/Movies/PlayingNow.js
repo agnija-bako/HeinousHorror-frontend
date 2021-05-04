@@ -31,7 +31,7 @@ class PlayingNow extends React.Component {
             dots: true,
             infinite: true,
             speed: 500,
-            slidesToShow: 5,
+            slidesToShow: 8,
             slidesToScroll: 3,
             initialSlide: 0,
             nextArrow: <NextArrow />,
@@ -40,9 +40,9 @@ class PlayingNow extends React.Component {
                 {
                     breakpoint: 1024,
                     settings: {
-                        slidesToShow: 7,
-                        slidesToScroll: 7,
-                        initialSlide: 2,
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        initialSlide: 1,
                         infinite: true,
                         dots: true
                     }
@@ -67,7 +67,7 @@ class PlayingNow extends React.Component {
 
         return (
             <div>
-                <h2 className="subtitle text-white" > Playing now</h2> 
+                <h2 className="subtitle text-white mx-5 mb-0" > Playing now</h2> 
                 <Slider {...settings}>
                     {this.state.movies.map((movie) => {
                         return (
