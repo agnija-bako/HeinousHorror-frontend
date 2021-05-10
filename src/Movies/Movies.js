@@ -9,11 +9,11 @@ function Movies() {
     return (
       <div>
         <div>
-            <h1 style={{ color: "#d90128" }} className="text-uppercase my-3 text-center">Movies</h1>
-        <PlayingNow/>
-        <Popular />
-        <Upcoming />
-        <Top />
+          <h1 style={{ color: "#d90128" }} className="text-uppercase my-3 text-center">Movies</h1>
+          <PlayingNow/>
+          <Popular />
+          <Upcoming />
+          <Top />
         </div>
       </div>
     )

@@ -1,7 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleLeft } from '@fortawesome/free-solid-svg-icons'
-import './Movies.css'
+import './Slider.css'
 
 function PrevArrow(props) {
     const { className, style, onClick } = props;

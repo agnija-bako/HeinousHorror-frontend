@@ -1,15 +1,3 @@
-.slick-prev, .slick-next {
-    font-size: 15px !important;
-  }
-  
-.slick-prev:before, .slick-next:before  {
-    content: '' !important;
-  }
-.slick-arrow{
-    top: 20%;
-  }
-
-  .subtitle{
+.subtitle{
     font-family: 'Open Sans', sans-serif;
-}
-
+  }

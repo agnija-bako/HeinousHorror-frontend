@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 
 
-function Movie(props) {
+function CardElement(props) {
     let badgeColor = "badge-success"
     if (props.votes < 3) {
         badgeColor = "badge-danger"
@@ -26,4 +26,4 @@ function Movie(props) {
 
     )
 }
-export default Movie
+export default CardElement
