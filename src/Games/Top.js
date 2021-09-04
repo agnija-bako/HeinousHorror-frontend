@@ -8,25 +8,26 @@ class Top extends React.Component {
     constructor() {
         super();
         this.state = {
-            games: [{
-                cover: "",
-            }],
+            games: [],
         }
     }
 
-    async componentDidMount() {
-        await fetch("https://localhost:44390/api/games/top")
+    componentDidMount() {
+        fetch("https://localhost:44390/api/games/top")
             .then(response => response.json())
             .then(data => {
-                console.log(data)
                 this.setState({ games: data})
-            })
-        this.state.games.forEach(element => {
-             fetch("https://localhost:44390/api/games/covers/" + element.id)
-            .then(response => response.json())
-            .then(data => {
-                console.log(data, "covers")
-            })
+                this.getCovers()               
+            });
+            
+    }
+     getCovers() {
+        this.state.games.forEach(game => {
+         fetch(`https://localhost:44390/api/games/covers/${game.id}`)
+         .then(response => response.json())
+         .then(data => {
+            game.cover = data[0].url        
+         });
         });
     }
     render() { 
@@ -39,3 +40,6 @@ class Top extends React.Component {
 }
 
 export default Top
+
+
+
