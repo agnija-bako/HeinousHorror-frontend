@@ -23,7 +23,7 @@ class Top extends React.Component {
     }
      getCovers() {
         this.state.games.forEach(game => {
-         fetch(`https://localhost:44390/api/games/covers/${game.id}`)
+         fetch(`https://localhost:44390/api/games/covers/${game.id}`) //this needs more work
          .then(response => response.json())
          .then(data => {
             game.cover = data[0].url        
